@@ -1,0 +1,98 @@
+apiVersion: appsody.dev/v1beta1
+kind: AppsodyApplication
+metadata:
+  annotations:
+    architecture: x86_64
+    authoritative-source-url: registry.access.redhat.com
+    build-date: 2020-01-30T08:16:17.662981
+    commit.image.appsody.dev/date: Sun May 10 14:44:25 2020 +0530
+    commit.image.appsody.dev/message: Hello from Kabanero
+    commit.stack.appsody.dev/author: kilnerm <38245247+kilnerm@users.noreply.github.com>
+    commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
+    commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
+    commit.stack.appsody.dev/date: Fri Apr 3 09:22:57 2020 +0100
+    commit.stack.appsody.dev/message: 'Merge pull request #316 from groeges/release-0.6'
+    description: This image contains the Kabanero development stack for the Nodejs
+      Express collection
+    distribution-scope: public
+    help: For more information visit https://github.com/sclorg/s2i-nodejs-container
+    image.opencontainers.org/created: "2020-05-10T15:03:16+05:30"
+    image.opencontainers.org/documentation: https://github.com/dinogun/kab-msil-nodeexp1
+    image.opencontainers.org/revision: 3c3eb30bf65dd14ab3d2d305842165bfda4de89b
+    image.opencontainers.org/source: https://github.com/dinogun/kab-msil-nodeexp1/tree/master
+    image.opencontainers.org/url: https://github.com/dinogun/kab-msil-nodeexp1
+    k8s.io/description: Node.js 10 available as container is a base platform for building
+      and running various Node.js 10 applications and frameworks. Node.js is a platform
+      built on Chrome's JavaScript runtime for easily building fast, scalable network
+      applications. Node.js uses an event-driven, non-blocking I/O model that makes
+      it lightweight and efficient, perfect for data-intensive real-time applications
+      that run across distributed devices.
+    k8s.io/display-name: Node.js 10
+    maintainer: SoftwareCollections.org <sclorg@redhat.com>
+    name: kabanero/nodejs-express
+    openshift.io/expose-services: 8080:http
+    openshift.io/tags: builder,nodejs,nodejs10
+    redhat.com/build-host: cpt-1008.osbs.prod.upshift.rdu2.redhat.com
+    redhat.com/component: nodejs-10-container
+    redhat.com/deployments-dir: /opt/app-root/src
+    redhat.com/dev-mode: DEV_MODE:false
+    redhat.com/dev-mode.port: DEBUG_PORT:5858
+    redhat.com/license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
+    release: "66"
+    s2i.io/scripts-url: image:///usr/libexec/s2i
+    s2i.openshift.io/scripts-url: image:///usr/libexec/s2i
+    stack.appsody.dev/authors: Chris Bailey <cnbailey@gmail.com>, Neeraj Laad <neeraj.laad@gmail.com>
+    stack.appsody.dev/configured: docker.io/kabanero/nodejs-express:0.2
+    stack.appsody.dev/created: "2020-04-21T06:50:55Z"
+    stack.appsody.dev/description: Express web framework for Node.js
+    stack.appsody.dev/digest: sha256:2d0bb6bfbbd6d4e24803d18b85edab2ae3083ab716b9a26f833300715a8caa5c
+    stack.appsody.dev/documentation: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/README.md
+    stack.appsody.dev/licenses: Apache-2.0
+    stack.appsody.dev/revision: 27a3254c80e6c5367a76e6099c2e18b393d15841
+    stack.appsody.dev/source: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/image
+    stack.appsody.dev/tag: docker.io/kabanero/nodejs-express:0.2.10
+    stack.appsody.dev/title: Node.js Express
+    stack.appsody.dev/url: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express
+    summary: Image for Kabanero Node.js Express development
+    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/nodejs-10/images/1-66
+    usage: s2i build <SOURCE-REPOSITORY> ubi8/nodejs-10:latest <APP-NAME>
+    vcs-ref: 6bc1753cc6499a5573f9fac87a839bc3fa7798d2
+    vcs-type: git
+    vendor: Kabanero
+    version: 0.2.10
+  creationTimestamp: null
+  labels:
+    image.opencontainers.org/title: nodeexp1
+    stack.appsody.dev/id: nodejs-express
+    stack.appsody.dev/version: 0.2.10
+  name: nodeexp1
+  namespace: dino-nodeexp1
+spec:
+  applicationImage: dev.local/nodeexp1
+  createKnativeService: false
+  expose: true
+  livenessProbe:
+    failureThreshold: 12
+    httpGet:
+      path: /live
+      port: 3000
+    initialDelaySeconds: 5
+    periodSeconds: 2
+  monitoring:
+    labels:
+      k8s-app: nodeexp1
+  readinessProbe:
+    failureThreshold: 12
+    httpGet:
+      path: /ready
+      port: 3000
+    initialDelaySeconds: 5
+    periodSeconds: 2
+    timeoutSeconds: 1
+  service:
+    annotations:
+      prometheus.io/scrape: "true"
+    port: 3000
+    type: NodePort
+  stack: nodejs-express
+  version: 1.0.0
