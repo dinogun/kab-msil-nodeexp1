@@ -15,11 +15,11 @@ app.get('/', (req, res) => {
 						"status" : "GOOD",
 						"img" : "https://images-na.ssl-images-amazon.com/images/I/71phrCAWcML._AC_SY355_.jpg"
 					}, 
-					//{
-					//  "item" : "Oil",
-					//  "status" : "MEDIUM",
-					//  "img" : "https://static.thenounproject.com/png/17696-200.png"
-					//},
+					{
+					  "item" : "Oil",
+					  "status" : "MEDIUM",
+					  "img" : "https://static.thenounproject.com/png/17696-200.png"
+					},
 					{
 						"item": "Battery",
 						"status" : "GOOD",
