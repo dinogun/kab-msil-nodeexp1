@@ -10,16 +10,16 @@ app.get('/', (req, res) => {
 			carPhoto : "https://img.etimg.com/thumb/msid-66905598,width-1200,height-900/industry/auto/cars-uvs/autocar-show-2018-maruti-suzuki-ertiga-test-drive-review.jpg",
 			detailedStatus :
 				[
-					{
-						"item" : "Brake Pad",
-						"status" : "GOOD",
-						"img" : "https://images-na.ssl-images-amazon.com/images/I/71phrCAWcML._AC_SY355_.jpg"
-					}, 
-					{
-					  "item" : "Oil",
-					  "status" : "MEDIUM",
-					  "img" : "https://static.thenounproject.com/png/17696-200.png"
-					},
+					//{
+					//	"item" : "Brake Pad",
+					//	"status" : "GOOD",
+					//	"img" : "https://images-na.ssl-images-amazon.com/images/I/71phrCAWcML._AC_SY355_.jpg"
+					//}, 
+					//{
+					//  "item" : "Oil",
+					//  "status" : "MEDIUM",
+					//  "img" : "https://static.thenounproject.com/png/17696-200.png"
+					//},
 					{
 						"item": "Battery",
 						"status" : "GOOD",

@@ -5,8 +5,9 @@ metadata:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2020-01-30T08:16:17.662981
-    commit.image.appsody.dev/date: Sun May 10 14:44:25 2020 +0530
-    commit.image.appsody.dev/message: Hello from Kabanero
+    commit.image.appsody.dev/contextDir: /data/dev/kabanero/demo/msil/nodeexp1
+    commit.image.appsody.dev/date: Fri May 15 09:18:51 2020 +0530
+    commit.image.appsody.dev/message: Add oil information
     commit.stack.appsody.dev/author: kilnerm <38245247+kilnerm@users.noreply.github.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
@@ -16,9 +17,9 @@ metadata:
       Express collection
     distribution-scope: public
     help: For more information visit https://github.com/sclorg/s2i-nodejs-container
-    image.opencontainers.org/created: "2020-05-10T15:03:16+05:30"
+    image.opencontainers.org/created: "2020-08-03T14:58:22+05:30"
     image.opencontainers.org/documentation: https://github.com/dinogun/kab-msil-nodeexp1
-    image.opencontainers.org/revision: 3c3eb30bf65dd14ab3d2d305842165bfda4de89b
+    image.opencontainers.org/revision: 8cdbeedcac9961d6246e1ed770c6f91150cc3f5b-modified
     image.opencontainers.org/source: https://github.com/dinogun/kab-msil-nodeexp1/tree/master
     image.opencontainers.org/url: https://github.com/dinogun/kab-msil-nodeexp1
     k8s.io/description: Node.js 10 available as container is a base platform for building
