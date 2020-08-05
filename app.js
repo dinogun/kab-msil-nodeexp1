@@ -5,27 +5,37 @@ app.get('/', (req, res) => {
 	
 	service.push(
 		{
-			customerName : "Srihari",
-			nextServiceDue : "15 May 2020",
-			carPhoto : "https://img.etimg.com/thumb/msid-66905598,width-1200,height-900/industry/auto/cars-uvs/autocar-show-2018-maruti-suzuki-ertiga-test-drive-review.jpg",
-			detailedStatus :
-				[
-					//{
-					//	"item" : "Brake Pad",
-					//	"status" : "GOOD",
-					//	"img" : "https://images-na.ssl-images-amazon.com/images/I/71phrCAWcML._AC_SY355_.jpg"
-					//}, 
-					//{
-					//  "item" : "Oil",
-					//  "status" : "MEDIUM",
-					//  "img" : "https://static.thenounproject.com/png/17696-200.png"
-					//},
-					{
-						"item": "Battery",
-						"status" : "GOOD",
-						"img" :"https://img.icons8.com/pastel-glyph/2x/car-battery--v2.png"
-					}
+			[
+			  {
+				"username": "Rohan",
+				"primaryPlan": "prepaid",
+				"msg_limit": "56",
+				"call_limit": "1245 mins",
+				"data_limit": "55.6 GB",
+				"plans": [
+				  {
+					"type": "Due by 16th Aug 2020",
+					"amount": "450.50",
+					"name": "August 2020"
+				  },
+				  {
+					"type": "Paid on 18th Jul 2020",
+					"amount": "345",
+					"name": "July 2020"
+				  },
+				  //{
+			//		"type": "Paid on 18th Jul 2020",
+			//		"amount": "INR 250",
+			//		"name": "June 2020"
+			//	  },
+				  {
+					"type": "prepaid",
+					"amount": "INR 250",
+					"name": "June 2020"
+				  }
 				]
+			  }
+			]
 		}
 	);
 
