@@ -22,11 +22,11 @@ app.get('/', (req, res) => {
 						"amount": "345",
 						"name": "July 2020"
 					},
-					{
-							"type": "Paid on 18th Jul 2020",
-							"amount": "INR 250",
-							"name": "June 2020"
-					},
+					//{
+					//	"type": "Paid on 7th Aug 2020",
+					//	"amount": "INR 250",
+					//	"name": "June 2020"
+					//},
 					{
 						"type": "prepaid",
 						"amount": "INR 250",
