@@ -5,12 +5,11 @@ app.get('/', (req, res) => {
 	
 	service.push(
 		{
-			"username": "Rohan",
+			"type": "corporate",
 		}
 	);
 
 	let sdata = JSON.stringify(service, null, 2);
-	//console.log(sdata);
 	res.send(sdata);
 });
  
